@@ -1,0 +1,27 @@
+<HTML>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="row" style="height:50%; margin-top:5%; ">
+ 	
+	<div class="col-4" >
+	
+	</div>
+	<div class="col-4" style="border-style:solid; border-color:grey; border-width:1px;box-shadow: 10px 10px 10px grey;padding-top:10px">
+	<form action="{{ url_for('dashboard')}}" method="post"> 
+    <div class="form-group mx-sm-3 mb-2">
+    <label for="username" class="sr-only">User Name</label>
+    <input type="text" class="form-control" name="username" placeholder="User Name">
+	</div>
+	<div class="form-group mx-sm-3 mb-2">
+    <label for="inputPassword2" class="sr-only">Password</label>
+    <input type="password" class="form-control" name="password" placeholder="Password">
+	</div>
+	<button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+	</form>
+	</div>
+
+<body>
